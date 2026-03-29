@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инновационные покрытия и краски | Лидер индустрии</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ppg: {
+                            blue: '#00539b', // Фирменный синий PPG
+                            lightBlue: '#0072ce',
+                            dark: '#1d1d1d',
+                            gray: '#f4f4f4',
+                            border: '#e5e5e5'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .hero-section {
+            background: linear-gradient(90deg, rgba(0,83,155,0.8) 0%, rgba(0,83,155,0.4) 100%), 
+                        url('https://images.unsplash.com/photo-1541888941293-1e8db9391073?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .product-card:hover img {
+            transform: scale(1.05);
+        }
+        .btn-ppg {
+            transition: all 0.3s ease;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+    </style>
+</head>
+<body class="bg-white text-ppg-dark font-sans">
+
+    <header class="sticky top-0 z-50 bg-white border-b border-ppg-border">
+        <div class="max-w-[1440px] mx-auto flex justify-between items-center px-6 h-20">
+            <div class="flex items-center space-x-2">
+                <div class="bg-ppg-blue text-white font-bold text-3xl px-3 py-1 italic">PPG</div>
+                <div class="hidden md:block text-[10px] leading-tight uppercase font-bold text-ppg-blue">
+                    We protect and<br>beautify the world
+                </div>
+            </div>
+            
+            <nav class="hidden lg:flex space-x-10 text-[15px] font-medium uppercase tracking-wide">
+                <a href="#about" class="hover:text-ppg-blue border-b-2 border-transparent hover:border-ppg-blue py-7">О компании</a>
+                <a href="#catalog" class="hover:text-ppg-blue border-b-2 border-transparent hover:border-ppg-blue py-7">Продукция</a>
+                <a href="#solutions" class="hover:text-ppg-blue border-b-2 border-transparent hover:border-ppg-blue py-7">Решения</a>
+                <a href="#contacts" class="hover:text-ppg-blue border-b-2 border-transparent hover:border-ppg-blue py-7">Контакты</a>
+            </nav>
+
+            <button class="bg-ppg-blue text-white px-6 py-2 text-sm font-bold uppercase hover:bg-ppg-lightBlue transition">
+                Связаться
+            </button>
+        </div>
+    </header>
+
+    <section class="hero-section h-[600px] flex items-center">
+        <div class="max-w-[1440px] mx-auto px-6 w-full">
+            <div class="max-w-2xl text-white">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">Надежная защита и красота вашего мира</h1>
+                <p class="text-xl mb-8 font-light leading-relaxed">PPG — мировой лидер в области лакокрасочных материалов, предлагающий инновационные решения для строительства, индустрии и транспорта.</p>
+                <div class="flex space-x-4">
+                    <a href="#catalog" class="bg-white text-ppg-blue px-8 py-3 font-bold uppercase text-sm hover:bg-ppg-gray transition">Продукция</a>
+                    <a href="#about" class="border-2 border-white text-white px-8 py-3 font-bold uppercase text-sm hover:bg-white hover:text-ppg-blue transition">Узнать больше</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-ppg-gray">
+        <div class="max-w-[1440px] mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-ppg-blue mb-6 uppercase tracking-tight">Лидерство в цвете и технологиях</h2>
+                    <p class="text-lg text-gray-700 mb-6">Мы разрабатываем покрытия, которые защищают самые сложные объекты планеты: от авиалайнеров и морских судов до фасадов небоскребов и частных домов.</p>
+                    <ul class="space-y-4 font-medium">
+                        <li class="flex items-center text-ppg-blue">
+                            <span class="w-6 h-[2px] bg-ppg-blue mr-3"></span> Мировые стандарты безопасности
+                        </li>
+                        <li class="flex items-center text-ppg-blue">
+                            <span class="w-6 h-[2px] bg-ppg-blue mr-3"></span> Экологичные формулы нового поколения
+                        </li>
+                        <li class="flex items-center text-ppg-blue">
+                            <span class="w-6 h-[2px] bg-ppg-blue mr-3"></span> Инновации, проверенные временем
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white p-8 border-t-4 border-ppg-blue shadow-sm">
+                        <div class="text-4xl font-bold text-ppg-blue mb-2">135+</div>
+                        <div class="text-sm uppercase font-bold text-gray-500">Лет опыта</div>
+                    </div>
+                    <div class="bg-white p-8 border-t-4 border-ppg-blue shadow-sm">
+                        <div class="text-4xl font-bold text-ppg-blue mb-2">70+</div>
+                        <div class="text-sm uppercase font-bold text-gray-500">Стран мира</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalog" class="py-20">
+        <div class="max-w-[1440px] mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <h2 class="text-4xl font-bold uppercase">Наши направления</h2>
+                <a href="#" class="text-ppg-blue font-bold uppercase text-sm border-b-2 border-ppg-blue pb-1">Весь каталог</a>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-1">
+                <div class="relative group overflow-hidden h-[400px] bg-black">
+                    <img src="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=2072&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-50 transition duration-500">
+                    <div class="absolute inset-0 p-10 flex flex-col justify-end text-white">
+                        <h3 class="text-2xl font-bold mb-2">Архитектурные покрытия</h3>
+                        <p class="text-sm mb-4 opacity-0 group-hover:opacity-100 transition duration-500">Краски и лаки премиум-класса для жилых и коммерческих интерьеров.</p>
+                        <button class="w-fit border border-white px-6 py-2 text-xs font-bold uppercase hover:bg-white hover:text-ppg-dark transition">Подробнее</button>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden h-[400px] bg-black">
+                    <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-50 transition duration-500">
+                    <div class="absolute inset-0 p-10 flex flex-col justify-end text-white">
+                        <h3 class="text-2xl font-bold mb-2">Промышленная защита</h3>
+                        <p class="text-sm mb-4 opacity-0 group-hover:opacity-100 transition duration-500">Специализированные покрытия для металла и бетона в агрессивных средах.</p>
+                        <button class="w-fit border border-white px-6 py-2 text-xs font-bold uppercase hover:bg-white hover:text-ppg-dark transition">Подробнее</button>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden h-[400px] bg-black">
+                    <img src="https://images.unsplash.com/photo-1590487988256-9ed24133863e?q=80&w=1928&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-50 transition duration-500">
+                    <div class="absolute inset-0 p-10 flex flex-col justify-end text-white">
+                        <h3 class="text-2xl font-bold mb-2">Защита дерева</h3>
+                        <p class="text-sm mb-4 opacity-0 group-hover:opacity-100 transition duration-500">Инновационные лазури и пропитки для сохранения естественной красоты дерева.</p>
+                        <button class="w-fit border border-white px-6 py-2 text-xs font-bold uppercase hover:bg-white hover:text-ppg-dark transition">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="py-20 bg-ppg-dark text-white">
+        <div class="max-w-[1440px] mx-auto px-6 grid md:grid-cols-2 gap-20">
+            <div>
+                <h2 class="text-4xl font-bold mb-8 uppercase tracking-tight">Готовы к сотрудничеству?</h2>
+                <p class="text-gray-400 mb-10 text-lg">Свяжитесь с нашими техническими специалистами для получения спецификаций и расчета материалов для вашего проекта.</p>
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-ppg-blue flex items-center justify-center font-bold">M</div>
+                        <div>
+                            <div class="text-xs uppercase text-gray-500 font-bold">Офис в Москве</div>
+                            <div class="text-sm font-bold">Бизнес-центр "Технопарк", ул. Промышленная, 42</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-ppg-blue flex items-center justify-center font-bold">T</div>
+                        <div>
+                            <div class="text-xs uppercase text-gray-500 font-bold">Телефон горячей линии</div>
+                            <div class="text-sm font-bold">8 (800) 100-20-30</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-8 md:p-12 text-ppg-dark">
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <input type="text" placeholder="Имя" class="w-full border-b-2 border-gray-200 py-3 focus:outline-none focus:border-ppg-blue transition" required>
+                        <input type="email" placeholder="Email" class="w-full border-b-2 border-gray-200 py-3 focus:outline-none focus:border-ppg-blue transition" required>
+                    </div>
+                    <input type="text" placeholder="Компания" class="w-full border-b-2 border-gray-200 py-3 focus:outline-none focus:border-ppg-blue transition">
+                    <textarea rows="4" placeholder="Ваше сообщение" class="w-full border-b-2 border-gray-200 py-3 focus:outline-none focus:border-ppg-blue transition"></textarea>
+                    <button class="bg-ppg-blue text-white w-full py-4 font-bold uppercase tracking-widest hover:bg-ppg-lightBlue transition">Отправить запрос</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white py-10 border-t border-ppg-border">
+        <div class="max-w-[1440px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-xs font-bold text-gray-500 uppercase tracking-widest">
+            <div class="flex items-center space-x-4 mb-4 md:mb-0">
+                <span class="text-ppg-blue italic text-xl">PPG</span>
+                <span>© 2026 PPG Industries. All rights reserved.</span>
+            </div>
+            <div class="flex space-x-8">
+                <a href="#" class="hover:text-ppg-blue">Legal Notices</a>
+                <a href="#" class="hover:text-ppg-blue">Privacy Policy</a>
+                <a href="#" class="hover:text-ppg-blue">Sitemap</a>
+            </div>
+          <div class="flex space-x-8">
+             <ul>
+<li><a href="https://finacia.net/freelancers-tax-calculator/">Калькулятор налогов</a></li>
+<li><a href="https://novosti.org.ua/">Novosti- актуальні новини – новини, україні, війна</a></li>
+<li><a href="https://versii.net/">Versii.Net — Версии — новости Украины и мира</a></li>
+<li><a href="https://game.net.ua">онлайн игры для девочек 5–7 лет</a></li>
+</ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
